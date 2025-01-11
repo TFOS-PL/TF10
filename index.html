@@ -1,12 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
-<title>TF/Bambus OS 4.0 </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5; url=TWÓJ_ADRES_STRONY">
+    <title>Przekierowanie</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #2b5876, #4e4376);
+            color: white;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin: 0.5em 0;
+            animation: slideIn 2s ease-in-out;
+        }
+        p {
+            font-size: 1.2rem;
+            margin: 1em 0;
+            animation: slideIn 2s ease-in-out 0.5s;
+        }
+        .redirect {
+            font-size: 1rem;
+            margin-top: 1.5em;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
-
-<h1>Witam na stronie TF/ Bambus OS 4.0</h1>
-<a href=link/">Link do TF OS 4.0 OS</a>
-
+    <div class="container">
+        <h1>Przekierowanie do TF/Bambus OS</h1>
+        <p>Za chwilę zostaniesz przeniesiony na stronę systemu TF/Bambus OS.</p>
+        <p class="redirect">Jeśli przekierowanie się nie rozpocznie, kliknij <a href="TWÓJ_ADRES_STRONY" style="color: #00e6e6; text-decoration: none;">tutaj</a>.</p>
+    </div>
 </body>
 </html>
